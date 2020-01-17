@@ -30,6 +30,7 @@ header h1 {
     justify-content: space-between;
     padding: 0 5px;
     color: #073066;
+    cursor: pointer;
 }
 
 #links-list li a {
@@ -43,7 +44,7 @@ header h1 {
     display: inline-block;
 }
 
-.link:hover {
+#links-list li:hover {
     background-color: #fff;
     border-radius: 5px;
 }
