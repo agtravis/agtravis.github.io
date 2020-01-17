@@ -1,6 +1,8 @@
 body {
   padding: 0;
   margin: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 header {
@@ -86,4 +88,21 @@ header h1 {
     display: none;
     background-color: black;
   }
+}
+
+footer {
+  background-color: #999999;
+  border-top: 3px solid #073066;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  margin-top: 100vh;
+}
+
+footer p {
+  font-size: 0.7em;
+  color: #073066;
+  position: relative;
+  top: 18px;
+  margin: 0;
 }
