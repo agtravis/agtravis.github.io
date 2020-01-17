@@ -29,6 +29,7 @@ header h1 {
     display: flex;
     justify-content: space-between;
     padding: 0 5px;
+    color: #073066;
 }
 
 #links-list li a {
@@ -38,9 +39,21 @@ header h1 {
 
 .link {
     padding: 0 5px;
+    position: relative;
+    display: inline-block;
 }
 
 .link:hover {
     background-color: #fff;
     border-radius: 5px;
+}
+
+#portfolio-list {
+    display: flex;
+    position: absolute;
+    bottom: -45px;
+}
+
+.hide {
+    display: none;
 }
