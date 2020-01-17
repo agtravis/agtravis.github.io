@@ -81,6 +81,21 @@ header h1 {
     display: none;
     background-color: black;
   }
+
+  #profile-pic {
+    float: none;
+    margin: auto;
+  }
+
+  #main-content-contents {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #main-content-header h3 {
+    font-size: 2rem;
+  }
 }
 
 @media screen and (min-width: 601px) {
@@ -88,12 +103,34 @@ header h1 {
     display: none;
     background-color: black;
   }
+
+  #profile-pic {
+    float: left;
+    margin-right: 15px;
+  }
 }
 
 #main-content {
   border: 3px solid #073066;
   border-radius: 10px;
   margin-top: 50px;
+  padding: 20px;
+}
+
+#main-content-contents {
+  margin-top: 30px;
+}
+
+#main-content-header {
+  border-bottom: 1px solid #073066;
+  margin-bottom: 10px;
+}
+
+#profile-pic {
+  width: 200px;
+  cursor: pointer;
+  border-radius: 50px;
+  margin-bottom: 15px;
 }
 
 footer {

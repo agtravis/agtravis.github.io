@@ -8,3 +8,11 @@ document
       document.getElementById('portfolio-list').classList.add('hide');
     }
   });
+
+document.getElementById('profile-pic').addEventListener('click', function() {
+  if (this.getAttribute('src') === 'assets/images/me1.jpg') {
+    this.setAttribute('src', 'assets/images/me2.jpg');
+  } else {
+    this.setAttribute('src', 'assets/images/me1.jpg');
+  }
+});
