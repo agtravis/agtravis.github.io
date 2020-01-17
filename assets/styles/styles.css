@@ -1,60 +1,88 @@
 body {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 header {
-    background-color: #5e9ef3;
-    position: relative;
-    padding-bottom: 20px;
+  background-color: #5e9ef3;
+  position: relative;
+  padding-bottom: 20px;
 }
 
 header h1 {
-    font-size: 3.75em;
-    color: #073066;
+  font-size: 3.75em;
+  color: #073066;
 }
 
 #my-links {
-    display: flex;
-    justify-content: flex-end;
+  display: flex;
+  justify-content: flex-end;
 }
 
 #links-list {
-    display: flex;
-    position: absolute;
-    bottom: 0;
+  display: flex;
+  position: absolute;
+  bottom: 0;
 }
 
 #links-list li {
-    display: flex;
-    justify-content: space-between;
-    padding: 0 5px;
-    color: #073066;
-    cursor: pointer;
+  padding: 0 5px;
+  color: #073066;
+  cursor: pointer;
 }
 
 #links-list li a {
-    text-decoration: none;
-    color: #073066;
+  text-decoration: none;
+  color: #073066;
 }
 
 .link {
-    padding: 0 5px;
-    position: relative;
-    display: inline-block;
+  padding: 0 5px;
+  position: relative;
+  display: inline-block;
 }
 
 #links-list li:hover {
-    background-color: #fff;
-    border-radius: 5px;
+  background-color: #fff;
+  border-radius: 5px;
 }
 
 #portfolio-list {
-    display: flex;
-    position: absolute;
-    bottom: -45px;
+  display: flex;
+  position: absolute;
+  bottom: -60px;
+}
+
+#portfolio-list a {
+  text-decoration: none;
+  padding: 5px;
+  color: #073066;
+  border-radius: 5px;
+}
+
+#portfolio-list a:hover {
+  background-color: #5e9ef3;
+}
+
+#portfolio-list li {
+  padding: 5px;
+  margin-top: 5px;
 }
 
 .hide {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  #portfolio-dropdown {
     display: none;
+    background-color: black;
+  }
+}
+
+@media screen and (min-width: 601px) {
+  #portfolio-dropdown-sm {
+    display: none;
+    background-color: black;
+  }
 }
