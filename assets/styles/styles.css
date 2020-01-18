@@ -84,6 +84,10 @@ header h1 {
   display: none;
 }
 
+.bold {
+  font-weight: bold;
+}
+
 @media screen and (max-width: 600px) {
   #portfolio-dropdown {
     display: none;
