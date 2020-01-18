@@ -3,6 +3,9 @@ body {
   margin: 0;
   display: flex;
   flex-direction: column;
+  color: #073066;
+  background-image: url('../images/dark-triangles.png');
+  background-attachment: fixed;
 }
 
 header {
@@ -53,7 +56,11 @@ header h1 {
 #portfolio-list {
   display: flex;
   position: absolute;
-  bottom: -60px;
+  bottom: -50px;
+  background-color: #fff;
+  padding-bottom: 5px;
+  border: 3px solid #073066;
+  border-radius: 5px;
 }
 
 #portfolio-list a {
@@ -65,11 +72,12 @@ header h1 {
 
 #portfolio-list a:hover {
   background-color: #5e9ef3;
+  color: #fff;
 }
 
 #portfolio-list li {
   padding: 5px;
-  margin-top: 5px;
+  margin-top: 6px;
 }
 
 .hide {
@@ -114,7 +122,8 @@ header h1 {
   border: 3px solid #073066;
   border-radius: 10px;
   margin-top: 50px;
-  padding: 20px;
+  padding: 20px 35px;
+  background-color: #fff;
 }
 
 #main-content-contents {
