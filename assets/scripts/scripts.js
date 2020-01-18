@@ -1,3 +1,5 @@
+'use strict';
+
 document
   .getElementById('portfolio-dropdown')
   .addEventListener('click', function(event) {
@@ -9,10 +11,12 @@ document
     }
   });
 
-document.getElementById('profile-pic').addEventListener('click', function() {
-  if (this.getAttribute('src') === 'assets/images/me1.jpg') {
-    this.setAttribute('src', 'assets/images/me2.jpg');
-  } else {
-    this.setAttribute('src', 'assets/images/me1.jpg');
-  }
-});
+if (document.getElementById('profile-pic')) {
+  document.getElementById('profile-pic').addEventListener('click', function() {
+    if (this.getAttribute('src') === 'assets/images/me1.jpg') {
+      this.setAttribute('src', 'assets/images/me2.jpg');
+    } else {
+      this.setAttribute('src', 'assets/images/me1.jpg');
+    }
+  });
+}
