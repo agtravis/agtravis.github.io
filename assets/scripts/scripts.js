@@ -14,6 +14,13 @@ const portfolio = [
     description:
       'Test yourself on multiple topics, with conditional scoring and distinctive high-scores',
     screenshot: 'assets/images/timed-quiz.PNG'
+  },
+  {
+    title: 'Day Planner',
+    href: 'https://agtravis.github.io/homework-week-5/index.html',
+    description:
+      'A daily planner for office hours with conditional time-slots for any date',
+    screenshot: 'assets/images/day-planner.PNG'
   }
 ];
 
