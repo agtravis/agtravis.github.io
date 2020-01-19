@@ -49,8 +49,8 @@ header h1 {
   display: inline-block;
 }
 
-#links-list li:hover {
-  background-color: #fff;
+#links-list li a:hover {
+  background-color: #b2cdf0;
   border-radius: 5px;
 }
 
@@ -58,7 +58,7 @@ header h1 {
   display: flex;
   position: absolute;
   bottom: -50px;
-  background-color: #fff;
+  background-color: #b2cdf0;
   padding-bottom: 5px;
   border: 3px solid #073066;
   border-radius: 5px;
@@ -100,6 +100,12 @@ header h1 {
     margin: auto;
   }
 
+  #main-content {
+    width: 100%;
+    border-top: 3px solid #073066;
+    border-bottom: 3px solid #073066;
+  }
+
   #main-content-contents {
     display: flex;
     flex-direction: column;
@@ -121,11 +127,16 @@ header h1 {
     float: left;
     margin-right: 15px;
   }
+
+  #main-content {
+    border: 3px solid #073066;
+    border-radius: 10px;
+  }
 }
 
 #main-content {
-  border: 3px solid #073066;
-  border-radius: 10px;
+  /* border: 3px solid #073066;
+  border-radius: 10px; */
   margin-top: 50px;
   margin-bottom: 50px;
   padding: 20px 35px;
