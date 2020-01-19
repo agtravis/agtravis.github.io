@@ -89,6 +89,10 @@ header h1 {
   font-weight: bold;
 }
 
+.opacity {
+  opacity: 15%;
+}
+
 /*small screen*/
 @media screen and (max-width: 600px) {
   #portfolio-dropdown {
@@ -191,10 +195,11 @@ header h1 {
 
 .portfolio-para {
   position: absolute;
-  top: 37%;
-  width: 80%;
+  top: 25%;
+  width: 100%;
   text-align: center;
-  margin: 0 10%;
+  vertical-align: middle;
+  padding: 0 10%;
 }
 
 footer {

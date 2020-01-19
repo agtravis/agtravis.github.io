@@ -12,7 +12,7 @@ const portfolio = [
     title: 'Timed Quiz',
     href: 'https://agtravis.github.io/homework-week-4/index.html',
     description:
-      'A timed quiz app to test users knowledge on multiple topics, with time based scores and local storage high scores for each quiz',
+      'Test yourself on multiple topics, with conditional scoring and distinctive high-scores',
     screenshot: 'assets/images/timed-quiz.PNG'
   }
 ];
@@ -23,29 +23,56 @@ if (portfolioDiv) {
   for (var i = 0; i < portfolio.length; ++i) {
     var newDiv = document.createElement('div');
     newDiv.setAttribute('class', 'portfolio-slot');
+    newDiv.setAttribute('id', 'portfolio-slot' + i);
     var newImg = document.createElement('img');
     newImg.setAttribute('class', 'portfolio-img');
     newImg.setAttribute('alt', portfolio[i].description);
     newImg.setAttribute('src', portfolio[i].screenshot);
+    newImg.setAttribute('id', 'portfolio-image' + i);
     var newHeading = document.createElement('h5');
     newHeading.setAttribute('class', 'portfolio-heading');
     newHeading.textContent = portfolio[i].title;
     var newPara = document.createElement('p');
-    newPara.setAttribute('class', 'portfolio-para hide');
-    newPara.textContent = portfolio[i].description;
+    newPara.setAttribute('class', 'portfolio-para bold');
+    newPara.setAttribute('id', 'description' + i);
     var newAnchor = document.createElement('a');
+    var newContainer = document.createElement('div');
+    newContainer.setAttribute('id', 'container' + i);
+    newContainer.setAttribute('class', 'portfolio-container-div hide');
     newAnchor.setAttribute('href', portfolio[i].href);
     newAnchor.setAttribute('target', '_blank');
     newAnchor.setAttribute('class', 'portfolio-link');
-    newAnchor.appendChild(newImg);
+    newAnchor.textContent = 'See Deployed App';
+    newPara.innerHTML = portfolio[i].description + '<br><br>';
+    newPara.appendChild(newAnchor);
     newDiv.appendChild(newHeading);
-    newDiv.appendChild(newAnchor);
-    newDiv.appendChild(newPara);
+    newDiv.appendChild(newImg);
+    newContainer.appendChild(newPara);
+    newDiv.appendChild(newContainer);
     if (!portfolioDiv.firstChild) {
       portfolioDiv.appendChild(newDiv);
     } else {
       portfolioDiv.insertBefore(newDiv, portfolioDiv.childNodes[0]);
     }
+  }
+  for (var i = 0; i < portfolio.length; ++i) {
+    document
+      .getElementById('portfolio-image' + i)
+      .addEventListener('click', function() {
+        if (!this.parentElement.children[1].classList.contains('opacity')) {
+          this.parentElement.children[1].classList.add('opacity');
+          this.parentElement.children[2].classList.remove('hide');
+        } else {
+          this.parentElement.children[1].classList.remove('opacity');
+          this.parentElement.children[2].classList.add('hide');
+        }
+      });
+    document
+      .getElementById('portfolio-slot' + i)
+      .addEventListener('mouseleave', function() {
+        this.children[1].classList.remove('opacity');
+        this.children[2].classList.add('hide');
+      });
   }
 }
 
