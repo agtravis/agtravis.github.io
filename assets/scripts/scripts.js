@@ -42,12 +42,14 @@ if (portfolioDiv) {
     newAnchor.setAttribute('href', portfolio[i].href);
     newAnchor.setAttribute('target', '_blank');
     newAnchor.setAttribute('class', 'portfolio-link');
+    newAnchor.setAttribute('id', 'deployed-app' + i);
     newAnchor.textContent = 'See Deployed App';
-    newPara.innerHTML = portfolio[i].description + '<br><br>';
-    newPara.appendChild(newAnchor);
+    newPara.innerHTML = portfolio[i].description;
+    // newPara.appendChild(newAnchor);
     newDiv.appendChild(newHeading);
     newDiv.appendChild(newImg);
     newContainer.appendChild(newPara);
+    newContainer.appendChild(newAnchor);
     newDiv.appendChild(newContainer);
     if (!portfolioDiv.firstChild) {
       portfolioDiv.appendChild(newDiv);
@@ -72,6 +74,24 @@ if (portfolioDiv) {
       .addEventListener('mouseleave', function() {
         this.children[1].classList.remove('opacity');
         this.children[2].classList.add('hide');
+      });
+    document
+      .getElementById('description' + i)
+      .addEventListener('mousedown', function() {
+        this.parentElement.parentElement.children[2].classList.add('hide');
+        this.parentElement.parentElement.children[1].classList.remove(
+          'opacity'
+        );
+        this.parentElement.parentElement.children[1].classList.add('active');
+      });
+    document
+      .getElementById('portfolio-image' + i)
+      .addEventListener('mouseup', function() {
+        if (!this.parentElement.children[1].classList.contains('opacity')) {
+          this.parentElement.children[1].classList.remove('active');
+
+          this.parentElement.children[1].classList.remove('opacity');
+        }
       });
   }
 }

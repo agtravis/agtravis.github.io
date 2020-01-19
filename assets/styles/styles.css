@@ -190,6 +190,13 @@ header h1 {
   border-left: 4px solid #cbdff8;
 }
 
+.active {
+  border-top: 4px solid #073066;
+  border-left: 4px solid #073066;
+  border-bottom: 4px solid #cbdff8;
+  border-right: 4px solid #cbdff8;
+}
+
 .portfolio-img:active {
   border-top: 4px solid #073066;
   border-left: 4px solid #073066;
@@ -204,9 +211,13 @@ header h1 {
   justify-content: center;
 }
 
-.portfolio-para {
+.portfolio-container-div {
   position: absolute;
   top: 25%;
+  text-align: center;
+}
+
+.portfolio-para {
   width: 100%;
   text-align: center;
   vertical-align: middle;
