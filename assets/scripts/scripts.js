@@ -12,15 +12,29 @@ const portfolio = [
     title: 'Timed Quiz',
     href: 'https://agtravis.github.io/homework-week-4/index.html',
     description:
-      'Test yourself on multiple topics, with conditional scoring and distinctive high-scores',
+      'Test yourself on multiple topics, with conditional scoring and distinctive local storage high-scores',
     screenshot: 'assets/images/timed-quiz.PNG'
   },
   {
     title: 'Day Planner',
     href: 'https://agtravis.github.io/homework-week-5/index.html',
     description:
-      'A daily planner for office hours with conditional time-slots for any date',
+      'A daily planner for office hours with local storage conditional time-slots for any date',
     screenshot: 'assets/images/day-planner.PNG'
+  },
+  {
+    title: 'Weather Dashboard',
+    href: 'https://agtravis.github.io/homework-week-6/index.html',
+    description:
+      'A weather forecast tool with 3rd party API queries & geolocation',
+    screenshot: 'assets/images/weather-dashboard.PNG'
+  },
+  {
+    title: 'Pocket Bartender',
+    href: 'https://agtravis.github.io/pocket-bartender/index.html',
+    description:
+      'Mobile first app with API queries & local storage for inspiration with home cocktailing',
+    screenshot: 'assets/images/pocket-bartender.PNG'
   }
 ];
 

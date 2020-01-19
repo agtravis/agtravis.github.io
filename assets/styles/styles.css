@@ -153,6 +153,7 @@ header h1 {
 
   .portfolio-slot {
     width: 275px;
+    margin-bottom: 20px;
   }
 
   #portfolio-contents {
