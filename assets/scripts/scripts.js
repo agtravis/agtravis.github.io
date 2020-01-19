@@ -6,7 +6,7 @@ const portfolio = [
     href: 'https://agtravis.github.io/homework-week-3/index.html',
     description:
       'A random password generator with user input and rules defining the result',
-    screenshot: 'assets/images/password-generator.png'
+    screenshot: 'assets/images/password-generator.PNG'
   },
   {
     title: 'Timed Quiz',
