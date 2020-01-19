@@ -184,6 +184,17 @@ header h1 {
 
 .portfolio-img {
   width: 100%;
+  border-bottom: 4px solid #073066;
+  border-right: 4px solid #073066;
+  border-top: 4px solid #cbdff8;
+  border-left: 4px solid #cbdff8;
+}
+
+.portfolio-img:active {
+  border-top: 4px solid #073066;
+  border-left: 4px solid #073066;
+  border-bottom: 4px solid #cbdff8;
+  border-right: 4px solid #cbdff8;
 }
 
 .portfolio-slot {
@@ -200,6 +211,29 @@ header h1 {
   text-align: center;
   vertical-align: middle;
   padding: 0 10%;
+  cursor: default;
+}
+
+.portfolio-link {
+  background-color: #5e9ef3;
+  color: #fff;
+  padding: 5px 10px;
+  border-bottom: 2px solid #073066;
+  border-right: 2px solid #073066;
+  border-top: 2px solid #cbdff8;
+  border-left: 2px solid #cbdff8;
+}
+
+.portfolio-link:hover {
+  background-color: #b2cdf0;
+}
+
+.portfolio-link:active {
+  border-top: 2px solid #073066;
+  border-left: 2px solid #073066;
+  border-bottom: 2px solid #cbdff8;
+  border-right: 2px solid #cbdff8;
+  color: #073066;
 }
 
 footer {
