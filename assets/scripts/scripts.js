@@ -25,7 +25,7 @@ if (portfolioDiv) {
     newDiv.setAttribute('class', 'portfolio-slot');
     newDiv.setAttribute('id', 'portfolio-slot' + i);
     var newImg = document.createElement('img');
-    newImg.setAttribute('class', 'portfolio-img');
+    newImg.setAttribute('class', 'portfolio-img pointer');
     newImg.setAttribute('alt', portfolio[i].description);
     newImg.setAttribute('src', portfolio[i].screenshot);
     newImg.setAttribute('id', 'portfolio-image' + i);
@@ -63,9 +63,11 @@ if (portfolioDiv) {
       .addEventListener('click', function() {
         if (!this.parentElement.children[1].classList.contains('opacity')) {
           this.parentElement.children[1].classList.add('opacity');
+          this.parentElement.children[1].classList.remove('pointer');
           this.parentElement.children[2].classList.remove('hide');
         } else {
           this.parentElement.children[1].classList.remove('opacity');
+          this.parentElement.children[1].classList.add('pointer');
           this.parentElement.children[2].classList.add('hide');
         }
       });
@@ -73,6 +75,7 @@ if (portfolioDiv) {
       .getElementById('portfolio-slot' + i)
       .addEventListener('mouseleave', function() {
         this.children[1].classList.remove('opacity');
+        this.children[1].classList.add('pointer');
         this.children[2].classList.add('hide');
       });
     document
@@ -82,6 +85,7 @@ if (portfolioDiv) {
         this.parentElement.parentElement.children[1].classList.remove(
           'opacity'
         );
+        this.parentElement.parentElement.children[1].classList.add('pointer');
         this.parentElement.parentElement.children[1].classList.add('active');
       });
     document
@@ -89,8 +93,8 @@ if (portfolioDiv) {
       .addEventListener('mouseup', function() {
         if (!this.parentElement.children[1].classList.contains('opacity')) {
           this.parentElement.children[1].classList.remove('active');
-
           this.parentElement.children[1].classList.remove('opacity');
+          this.parentElement.children[1].classList.add('pointer');
         }
       });
   }
