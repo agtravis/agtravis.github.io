@@ -247,6 +247,49 @@ header h1 {
   color: #073066;
 }
 
+.input {
+  margin-bottom: -3px;
+}
+
+#username,
+#email,
+#message {
+  width: 100%;
+  border: solid 1px #073066;
+  border-radius: 5px;
+}
+
+#message {
+  height: 100px;
+}
+
+p#submit {
+  background-color: #254670;
+  color: #cbdff8;
+  width: 250px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-bottom: 2px solid #073066;
+  border-right: 2px solid #073066;
+  border-top: 2px solid #cbdff8;
+  border-left: 2px solid #cbdff8;
+}
+
+p#submit:hover {
+  background-color: #5e9ef3;
+  color: #073066;
+}
+
+p#submit:active {
+  border-top: 2px solid #073066;
+  border-left: 2px solid #073066;
+  border-bottom: 2px solid #cbdff8;
+  border-right: 2px solid #cbdff8;
+}
+
 footer {
   background-color: #999999;
   border-top: 3px solid #073066;

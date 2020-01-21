@@ -78,7 +78,29 @@
         <h3>Contact Info</h3>
       </div>
       <div id="main-content-contents">
-        content
+        <form id="contactForm">
+          <p class="input">Name</p>
+          <input
+            type="text"
+            id="username"
+            name="username"
+            required
+            minlength="1"
+            maxlength="50"
+          />
+          <p class="input">Email</p>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            minlength="1"
+            maxlength="50"
+          />
+          <p class="input">Message</p>
+          <textarea id="message" name="message" required rows="10"></textarea>
+          <p id="submit">Submit</p>
+        </form>
       </div>
     </div>
 
