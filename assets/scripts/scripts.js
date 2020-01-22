@@ -4,6 +4,7 @@ const portfolio = [
   {
     title: 'Password Generator',
     href: 'https://agtravis.github.io/homework-week-3/index.html',
+    github: 'https://github.com/agtravis/homework-week-3',
     description:
       'A random password generator with user input and rules defining the result',
     screenshot: 'assets/images/password-generator.PNG'
@@ -11,6 +12,7 @@ const portfolio = [
   {
     title: 'Timed Quiz',
     href: 'https://agtravis.github.io/homework-week-4/index.html',
+    github: 'https://github.com/agtravis/homework-week-4',
     description:
       'Test yourself on multiple topics, with conditional scoring and distinctive local storage high-scores',
     screenshot: 'assets/images/timed-quiz.png'
@@ -18,6 +20,7 @@ const portfolio = [
   {
     title: 'Day Planner',
     href: 'https://agtravis.github.io/homework-week-5/index.html',
+    github: 'https://github.com/agtravis/homework-week-5',
     description:
       'A daily planner for office hours with local storage conditional time-slots for any date',
     screenshot: 'assets/images/day-planner.png'
@@ -25,6 +28,7 @@ const portfolio = [
   {
     title: 'Weather Dashboard',
     href: 'https://agtravis.github.io/homework-week-6/index.html',
+    github: 'https://github.com/agtravis/homework-week-6',
     description:
       'A weather forecast tool with 3rd party API queries & geolocation',
     screenshot: 'assets/images/weather-dashboard.png'
@@ -32,6 +36,7 @@ const portfolio = [
   {
     title: 'Pocket Bartender',
     href: 'https://agtravis.github.io/pocket-bartender/index.html',
+    github: 'https://github.com/agtravis/pocket-bartender',
     description:
       'Mobile first app with API queries & local storage for inspiration with home cocktailing',
     screenshot: 'assets/images/pocket-bartender.png'
@@ -43,34 +48,40 @@ var portfolioDiv = document.getElementById('portfolio-contents');
 if (portfolioDiv) {
   for (var i = 0; i < portfolio.length; ++i) {
     var newDiv = document.createElement('div');
+    var newImg = document.createElement('img');
+    var newHeading = document.createElement('h5');
+    var newPara = document.createElement('p');
+    var newAnchor = document.createElement('a');
+    var newContainer = document.createElement('div');
+    var newAnchorGit = document.createElement('a');
     newDiv.setAttribute('class', 'portfolio-slot');
     newDiv.setAttribute('id', 'portfolio-slot' + i);
-    var newImg = document.createElement('img');
     newImg.setAttribute('class', 'portfolio-img pointer');
     newImg.setAttribute('alt', portfolio[i].description);
     newImg.setAttribute('src', portfolio[i].screenshot);
     newImg.setAttribute('id', 'portfolio-image' + i);
-    var newHeading = document.createElement('h5');
     newHeading.setAttribute('class', 'portfolio-heading');
     newHeading.textContent = portfolio[i].title;
-    var newPara = document.createElement('p');
     newPara.setAttribute('class', 'portfolio-para bold');
     newPara.setAttribute('id', 'description' + i);
-    var newAnchor = document.createElement('a');
-    var newContainer = document.createElement('div');
     newContainer.setAttribute('id', 'container' + i);
     newContainer.setAttribute('class', 'portfolio-container-div hide');
     newAnchor.setAttribute('href', portfolio[i].href);
     newAnchor.setAttribute('target', '_blank');
     newAnchor.setAttribute('class', 'portfolio-link');
     newAnchor.setAttribute('id', 'deployed-app' + i);
-    newAnchor.textContent = 'See Deployed App';
+    newAnchor.textContent = 'Deployed App';
+    newAnchorGit.setAttribute('href', portfolio[i].github);
+    newAnchorGit.setAttribute('target', '_blank');
+    newAnchorGit.setAttribute('class', 'portfolio-link');
+    newAnchorGit.setAttribute('id', 'github' + i);
+    newAnchorGit.textContent = 'GitHub Repo';
     newPara.innerHTML = portfolio[i].description;
-    // newPara.appendChild(newAnchor);
     newDiv.appendChild(newHeading);
     newDiv.appendChild(newImg);
     newContainer.appendChild(newPara);
     newContainer.appendChild(newAnchor);
+    newContainer.appendChild(newAnchorGit);
     newDiv.appendChild(newContainer);
     if (!portfolioDiv.firstChild) {
       portfolioDiv.appendChild(newDiv);

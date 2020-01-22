@@ -226,6 +226,8 @@ header h1 {
 }
 
 .portfolio-link {
+  font-size: 0.8rem;
+  margin: 0 5px;
   background-color: #5e9ef3;
   color: #fff;
   padding: 5px 10px;
