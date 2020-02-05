@@ -40,6 +40,22 @@ const portfolio = [
     description:
       'Mobile first app with API queries & local storage for inspiration with home cocktailing',
     screenshot: 'assets/images/pocket-bartender.png'
+  },
+  {
+    title: 'Resume Generator',
+    href: 'https://github.com/agtravis/node-resume-generator',
+    github: 'https://github.com/agtravis/node-resume-generator',
+    description:
+      'CLI to run with Node.JS that uses the GitHub API to generate a PDF resume with theme selection',
+    screenshot: 'assets/images/node-resume-generator.png'
+  },
+  {
+    title: 'Dev-Team Builder',
+    href: 'https://github.com/agtravis/employee-summary-team-builder',
+    github: 'https://github.com/agtravis/employee-summary-team-builder',
+    description:
+      'CLI to run with Node.JS that takes user input to assemble a project team, uses regex validation',
+    screenshot: 'assets/images/employee-summary-team-builder.png'
   }
 ];
 
