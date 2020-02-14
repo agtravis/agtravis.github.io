@@ -56,6 +56,14 @@ const portfolio = [
     description:
       'CLI to run with Node.JS that takes user input to assemble a project team, uses regex validation',
     screenshot: 'assets/images/employee-summary-team-builder.png'
+  },
+  {
+    title: 'Note Taker',
+    href: 'https://agtravis-note-taker.herokuapp.com/',
+    github: 'https://github.com/agtravis/note-taker',
+    description:
+      'Heroku deployed app written in JavaScript for Node.JS that runs in the browser and stores user input on a server',
+    screenshot: 'assets/images/enter-notes.PNG'
   }
 ];
 
