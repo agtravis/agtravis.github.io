@@ -70,7 +70,7 @@ const portfolio = [
     href: 'https://github.com/agtravis/employee-tracker',
     github: 'https://github.com/agtravis/employee-tracker',
     description:
-      'CLI running in Node.JS that navigates a SQL DB where a user can manage a team of employees, adding, updating, and deleting',
+      'CLI running in Node.JS that navigates a SQL DB where a user can manage a team of employees, CRUD features',
     screenshot: 'assets/images/employee-tracker.png'
   }
 ];
