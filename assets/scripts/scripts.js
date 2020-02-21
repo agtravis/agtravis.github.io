@@ -64,6 +64,14 @@ const portfolio = [
     description:
       'Heroku deployed app written in JavaScript for Node.JS that runs in the browser and stores user input on a server',
     screenshot: 'assets/images/enter-notes.PNG'
+  },
+  {
+    title: 'Employee Tracker',
+    href: 'https://github.com/agtravis/employee-tracker',
+    github: 'https://github.com/agtravis/employee-tracker',
+    description:
+      'CLI running in Node.JS that navigates a SQL DB where a user can manage a team of employees, adding, updating, and deleting',
+    screenshot: 'assets/images/employee-tracker.png'
   }
 ];
 
