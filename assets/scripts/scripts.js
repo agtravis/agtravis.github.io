@@ -72,6 +72,14 @@ const portfolio = [
     description:
       'CLI running in Node.JS that navigates a SQL DB where a user can manage a team of employees, CRUD features',
     screenshot: 'assets/images/employee-tracker.png'
+  },
+  {
+    title: 'Burger App',
+    href: 'https://agtravis-burger.herokuapp.com/',
+    github: 'https://github.com/agtravis/burger',
+    description:
+      'An app that runs in the browser via Heroku and utilizing SQL and CRUD operations to create a fun UI',
+    screenshot: 'assets/images/burger-app.png'
   }
 ];
 
