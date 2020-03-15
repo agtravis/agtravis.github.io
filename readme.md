@@ -10,7 +10,8 @@
 
 At present my LinkedIn is set to private, so below are some screenshots (there is no employment history on purpose for now so it will reduce search capabilities):
 
-![Main](https://github.com/agtravis/agtravis.github.io/blob/master/assets/images/linkedin-main.PNG)
-![Education](https://github.com/agtravis/agtravis.github.io/blob/master/assets/images/linkedin-education.PNG)
-![Skills1](https://github.com/agtravis/agtravis.github.io/blob/master/assets/images/linkedin-skills1.PNG)
-![Skills2](https://github.com/agtravis/agtravis.github.io/blob/master/assets/images/linkedin-skills2.PNG)
+![Linkedin1](./assets/images/linkedin1.PNG)
+![Linkedin2](./assets/images/linkedin2.PNG)
+![Linkedin3](./assets/images/linkedin3.PNG)
+![Linkedin4](./assets/images/linkedin4.PNG)
+![Linkedin5](./assets/images/linkedin5.PNG)
