@@ -80,6 +80,14 @@ const portfolio = [
     description:
       'An app that runs in the browser via Heroku and utilizing SQL and CRUD operations to create a fun UI',
     screenshot: 'assets/images/burger-app.png'
+  },
+  {
+    title: 'Rinqydink Arcade',
+    href: 'https://rinqydinky.herokuapp.com/',
+    github: 'https://github.com/agtravis/RINQYDINK',
+    description:
+      'An online gaming community featuring games, chat, member profiles with high scores. Games written in JS',
+    screenshot: 'assets/images/game-chat.png'
   }
 ];
 
