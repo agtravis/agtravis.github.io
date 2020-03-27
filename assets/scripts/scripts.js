@@ -88,6 +88,14 @@ const portfolio = [
     description:
       'An online gaming community featuring games, chat, member profiles with high scores. Games written in JS',
     screenshot: 'assets/images/game-chat.png'
+  },
+  {
+    title: 'Workout Tracker',
+    href: 'https://agtravis-workout-tracker.herokuapp.com/',
+    github: 'https://github.com/agtravis/workout-tracker',
+    description:
+      'A graphical interface for users to be able to track their fitness using MongoDB and Mongoose',
+    screenshot: 'assets/images/workout-tracker.PNG'
   }
 ];
 
