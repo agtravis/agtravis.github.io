@@ -113,8 +113,10 @@ if (portfolioDiv) {
     newDiv.setAttribute('class', 'portfolio-slot');
     newDiv.setAttribute('id', 'portfolio-slot' + i);
     newImg.setAttribute('class', 'portfolio-img pointer');
-    newImg.setAttribute('alt', portfolio[i].description);
-    newImg.setAttribute('src', portfolio[i].screenshot);
+    // newImg.setAttribute('alt', portfolio[i].description);
+    // newImg.setAttribute('src', portfolio[i].screenshot);
+    newImg.setAttribute('data-lazy', portfolio[i].screenshot);
+    newImg.setAttribute('data-lazyalt', portfolio[i].description);
     newImg.setAttribute('id', 'portfolio-image' + i);
     newHeading.setAttribute('class', 'portfolio-heading');
     newHeading.textContent = portfolio[i].title;
@@ -259,3 +261,26 @@ if (document.getElementById('contact-form')) {
     }
   });
 }
+
+const targets = document.querySelectorAll('.portfolio-img');
+
+const lazyload = target => {
+  const io = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      console.log('check');
+      if (entry.isIntersecting) {
+        const img = entry.target;
+        const src = img.getAttribute('data-lazy');
+        const alt = img.getAttribute('data-lazyalt');
+        img.setAttribute('src', src);
+        img.setAttribute('alt', alt);
+
+        observer.disconnect();
+      }
+    });
+  });
+
+  io.observe(target);
+};
+
+targets.forEach(lazyload);
